@@ -1,0 +1,37 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, input, img, p, blockquote, pre,
+a, address, big, em, img, small, strong, sub, sup, tt,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 26.67vw;
+}
+body {
+	font-size: 0.16rem;
+}
+img, fieldset {
+	border: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}

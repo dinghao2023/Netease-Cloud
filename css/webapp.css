@@ -1,0 +1,199 @@
+html{
+    height: 100%;
+    font-size: 26.67vw;
+}
+body{
+    width: 100%;
+    height: 100%;
+    /* html/body的高度均设置为100%，main设置overflow:hidden可使开头两部分固定定位在开头 */
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 0.49rem;
+    display: flex;
+    background-color: #d43b33;
+    line-height: 0.49rem;
+    justify-content: space-between;
+    align-items: center;
+}
+header>.iconfont {
+    width: 0.54rem;
+    height: 0.49rem;
+    box-sizing: border-box;
+    /* padding-left: 0.18rem; */
+    color: rgb(252, 243, 255);
+    font-size: 0.24rem;
+    display: flex;
+    justify-content: center;
+}
+header>.iconfont:first-child{
+    /* width: 0.39rem; */
+    padding-left: 0.05rem;
+    text-align: center;
+}
+header form{
+    /* width: 2.67rem; */
+    /* height: 0.3rem; */
+    background-color: #fff;
+    display: flex;
+    border-radius: 0.05rem;
+}
+header form .iconfont{
+    width: 0.14rem;
+    height: 0.3rem;
+    padding-left: 0.47rem;
+    color: rgb(200, 200, 200);
+    line-height: 0.3rem;
+    font-size: 0.14rem;
+}
+header form input{
+    width: 1.97rem;
+    height: 0.3rem;
+    padding-left: 0.09rem;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(200, 200, 200);
+}
+/* nav */
+nav{
+    width: 100%;
+    height: 0.4rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    line-height: 0.4rem;
+    font-size: 0.16rem;
+}
+nav>a{
+    padding: 0 0.06rem;
+    line-height: 0.4rem;
+}
+nav>a:first-child{
+    color: #c04033;
+    border-bottom: 0.04rem solid #c04033;
+}
+/* main */
+/* banner */
+main{
+    overflow: auto;
+}
+.banner{
+    height: 1.39rem;
+}
+.banner>img{
+    width: 100%;
+    height: 100%;
+}
+/* record */
+.record{
+    border-bottom: 0.01rem solid #999;
+}
+.record>ul{
+    width: 100%;
+    height: 1.02rem;
+    display: flex;
+    justify-content: space-around;
+}
+.record>ul>li{
+    width: 33%;
+    flex-grow: 1;
+    padding: 0.12rem 0 0.13rem 0;
+    text-align: center;
+}
+.record>ul>li>.iconfont{
+    display: block;
+    width: 0.54rem;
+    height: 0.54rem;
+    margin: auto;
+    line-height: 0.54rem;
+    border-radius: 50%;
+    border: 0.01rem solid #d63934;
+    font-size: 0.25rem;
+    color: #d2382c;
+}
+.record>ul>li>a{
+    display: block;
+    margin-top: 0.07rem;
+    font-size: 0.11rem;
+}
+/* recommend */
+.recommend{
+    box-sizing: border-box;
+    width: 100%;
+    height: 0.45rem;
+    padding: 0 0.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.recommend>aside{
+    height: 0.2rem;
+    padding-top: 0.25rem;
+    font-size: 0.15rem;
+}
+.recommend>aside:first-child>.iconfont{
+    font-size: 0.15rem;
+    color: #d2382c;
+}
+.recommend>aside:last-child{
+    font-size: 0.12rem;
+}
+/* imageList */
+.imageList{
+    margin-top: 0.18rem;
+}
+.imageList>ul{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 0.1rem 0.48rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.imageList>ul>li{
+    margin-bottom: 0.18rem;
+}
+.imageList>ul>li>img{
+    width: 1.14rem;
+    height: 1.14rem;
+    display: block;
+}
+.imageList>ul>li>p{
+    width: 1.14rem;
+    margin-top: 0.07rem;
+    font-size: 0.12rem;
+}
+/* footer */
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.footerUl{
+    box-sizing: border-box;
+    width: 100%;
+    height: 0.48rem;
+    display: flex;
+    padding: 0 0.1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.footerUl>li{
+    width: 25%;
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #b2a3a0;
+    font-size: 0.12rem;
+}
+.footerUl>li:first-child{
+    color: #fff;
+}
+.footerUl>li:first-child>.iconfont{
+    color: #fff;
+}
+.footerUl>li>.iconfont{
+    color: #b2a3a0;
+    font-size: 0.25rem;
+}
